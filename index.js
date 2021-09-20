@@ -23,7 +23,7 @@ const proc = osu.proc;
 const { dependencies } = require("./package.json");
 
 client.on("messageCreate", (message) => {
-    if(!message.content.startsWith("!botprefix info")) {
+    if(!message.content.startsWith("!info")) {
         return 0;}
     if(!message.guild) {return};
     if(!message.member) {return}; // Idk, i can't use shorer if XD
